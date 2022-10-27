@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+  int score = 0;
   enum fields {Word, WORD_FIELDS};
   const int numOfWords = 4;
       const string Words[4] = {"programming", "computer", "software", "hardware"};
@@ -57,7 +58,7 @@ int main() {
 
   if (guess == theWord){
     cout << "\nYou have guessed correctly!";
-    //score += 1;
+    score += 1;
   }
   cout << "...Thank you for playing." << endl;
   return 0;
